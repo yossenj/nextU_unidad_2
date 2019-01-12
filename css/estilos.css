@@ -2,8 +2,10 @@ body {
 	font-family: Verdana;
 	width: 90%;
 	margin-left: 5%;
-
+	font-size: 18px;
+	color: blue;
 }
+
 
 header {
 	padding: 1vh 1vw;
@@ -28,15 +30,30 @@ footer {
 	text-align: center;
 }
 
-.adaptativa-porcentaje{
-	width:90%;
+img {
+	width: 50%;
 }
-.adaptativa-porcentaje-1{
-	width:70%;
+@media (min-width: 600px)
+{
+	#resumen
+	{
+		display: block;
+	}
+	body
+	{
+		font-size: 16px;
+		color: red;
+	}
 }
-.adaptativa-porcentaje-2{
-	width:50%;
-}
-.adaptativa-porcentaje-3{
-	width:20%;
+@media (min-width: 900px)
+{
+	#resumen
+	{
+		display: none;
+	}
+	body
+	{
+		font-size: 14px;
+		color: black;
+	}
 }
