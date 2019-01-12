@@ -1,63 +1,73 @@
 <html>
-<head>
-	<title>HTML Base</title>
-	<link rel="stylesheet" href="css/estilos.css" />
-</head>
-<body>
-<h1>Registro en nuestra tienda</h1>
-<form action="">
-	<p>
-		<label for="username">Nombre de usuario</label>
-		<br>
-		<input type="text" name="username" placeholder="Ej: luis" autofocus required>
-	</p>
-	<p>
-		<label for="email">Email: </label>
-		<br>
-		<input type="email" name="email" placeholder="Ej: luis@gmail.com" required>
-	</p>
-	<p>
-		<label for="age">Edad: </label>
-		<br>
-		<input type="number" name="age" placeholder="Ej: 21" required>
-	</p>
-	<p>
-		<label for="dob">Fecha de nacimiento: </label>
-		<br>
-		<input type="date" name="dob" placeholder="Ej: 21" >
-	</p>
-	<p>
-		<label for="genre">G&eacute;nero: </label>
-		<br>
-		<input type="radio" name="genre"> Masculino
-		<br>
-		<input type="radio" name="genre"> Femenino
-	</p>
-	<p>
-		<label for="recommend">Recomendado por: </label>
-		<br>
-		<select name="recommend">
-			<option value="1">Google</option>
-			<option value="1">Amigo</option>
-			<option value="1">Redes Sociales</option>
-		</select>
-	</p>
-	<p>
-		<label for="comment">Comentarios: </label>
-		<br>
-		<textarea name="comment" id=""></textarea>
-	</p>
+	<head>
+		<title>HTML Base</title>
+		<link rel="stylesheet" href="estilos/estilos.css" />
+	</head>
+	<body>
+		<h1>Cartelera de vuelos - Aeropuerto el mirador</h1>
+		<navbar id="menu-principal">
+			<a href="vuelos_por_hora.html">Vuelos por hora</a>
+			<a href="vuelos_por_destino.html">Vuelos por destino</a>
+		</navbar>
+		<h2>Llegadas</h2>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<thead>
+				<tr>
+					<th>Aerolinea</th>
+					<th>Nro. vuelo</th>
+					<th>Estatus</th>
+					<th>Hora estimada</th>
+					<th>Puerta</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>AIRLAN</td>
+					<td>355</td>
+					<td>ATERRIZO</td>
+					<td>2:45PM</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>VIAJAR</td>
+					<td>556</td>
+					<td>RETARDADO</td>
+					<td>2:35PM</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>AEROVUELO</td>
+					<td>1234</td>
+					<td>EN VUELO</td>
+					<td>3:45PM</td>
+					<td>8</td>
+				</tr>
+			</tbody>
+		</table>
 
-	<p>
-		<label for="accept">Acepto terminos y condiciones: </label>
-		<br>
-		<input type="checkbox" name="accept">
-	</p>
-
-	<p>
-		<input type="submit" value="Registrar">
-	</p>
-</form>
-
-</body>
+		<h2>Salidas</h2>
+		<table border="1" cellpadding="10" cellspacing="0" class="sombra">
+			<thead>
+			<tr>
+				<th>Aerolinea</th>
+				<th>Nro. vuelo</th>
+				<th>Estatus</th>
+				<th>Hora estimada</th>
+				<th>Puerta</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>AIRLAN</td>
+				<td>355</td>
+				<td>EMBARCANDO</td>
+				<td>2:15PM</td>
+				<td>1</td>
+			</tr>
+			</tbody>
+		</table>
+		<footer>
+			Derechos Reservados
+		</footer>
+	</body>
 </html>
