@@ -3,23 +3,15 @@ body
 	margin: 20px;
 	font-family: verdana;
 }
-.resaltado
+label 
 {
-	background: yellow;
+	width: 200px;
 }
-#menu-principal
+input[name="email"]
 {
-	padding: 10px 0px;
+	background: #eeeeee;
 }
-.titulo
+p, label
 {
-	background: aliceblue;
-	text-align: center;
-	padding: 10px;
-}
-footer
-{
-	border-top: 1px solid black;
-	padding-top: 10px;
-	text-align: center;
+	font-family: tahoma;
 }
